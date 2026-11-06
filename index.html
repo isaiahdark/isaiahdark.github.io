@@ -3,8 +3,8 @@
     <a href="https://www.avc.edu">Visit Antelope Valley College</a></p>
 <nav>
     <a href="#about">About Me</a>
-    <a href="#interests">My Interests</a>
     <a href="#links">Example Links</a>
+    <a href="#cards">More About Me</a>
     <a href="#contact">Contact Me</a>
 </nav>
 
@@ -19,6 +19,18 @@
 
 nav a:hover {
     background-color: #555;
+}    
+    .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.card {
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
 }</style>
 
 <img src="images/me n cat.jpg" alt="me n cat" style="width: 60%; height: 550px; object-fit: cover;">
@@ -26,18 +38,9 @@ nav a:hover {
 <section>
         <h1 id="about">About Me</h1>
     <p>
-        Currently in school at AVC for my major in Computer Science -
+        Currently in school at AVC for my major in Computer Science<br>
         Working at the same time to provide a roof over my head
         and my family
-    </p>
-    
-    <h2 id="interests">Interests</h2>
-    <p>
-        * Video Games<br>
-        * Movies<br>
-        * Computers<br>
-        * Cooking<br>
-        * etc.<br>
     </p>
 </section>
 
@@ -51,6 +54,48 @@ nav a:hover {
 
         <a href="https://www.instagram.com/wesghost/" target="_blank">Instagram</a>
     </p>
+</section>
+
+<section id="cards">
+    <h2>More About Me</h2>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Education</h3>
+            <p>
+               * High school diploma (DSCHS 2021)<br>
+                * First year of college (2026-)<br>
+                - - -<br>
+                * Customer Service experience (4 years)<br>
+                * Manager experience (2 years)<br>
+                * Kitchen line experience (1 year)<br>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Skills</h3>
+            <p>
+        * Hand-Eye Coordination<br>
+        * Math Calculations<br>
+        * Extensive Computer Utilization<br>
+        * Cooking<br>
+        * etc..<br>
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Interests</h3>
+            <p>
+        * Video Games<br>
+        * Movies<br>
+        * Computers<br>
+        * Cooking<br>
+        * etc..<br>
+            </p>
+        </div>
+
+    </div>
 </section>
 
 <section>
